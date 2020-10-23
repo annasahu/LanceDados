@@ -12,13 +12,10 @@ class MainActivity : AppCompatActivity() {
 
         /* variaveis */
         val botaoLancarDados = findViewById<Button>(R.id.lanceDadoBotao)
-        val valorDado1 = findViewById<TextView>(R.id.dado1)
-        val valorDado2 = findViewById<TextView>(R.id.dado2)
+
 
         /* botao para lancar dados */
         botaoLancarDados.setOnClickListener {
-            valorDado1.text = lancarDados().toString()
-            valorDado2.text = lancarDados().toString()
         }
     }
 
