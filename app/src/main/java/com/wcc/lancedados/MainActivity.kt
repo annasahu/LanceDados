@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +20,10 @@ class MainActivity : AppCompatActivity() {
             dado1.setImageResource(lancarDados())
             dado2.setImageResource(lancarDados())
         }
+
+        val playerName = getIntent().getStringExtra("playerName")
+        val playerNameTextView = findViewById<TextView>(R.id.textPlayerName)
+        playerNameTextView.text = "Olá, $playerName"
     }
 
     fun lancarDados(): Int {
