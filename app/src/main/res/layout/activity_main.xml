@@ -10,32 +10,35 @@
         android:id="@+id/lanceDadoBotao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
         android:text="@string/etiqueta_botao_lancar_dados"
         android:textColor="#F8F5F5"
         android:textStyle="bold"
         app:iconTint="#673AB7"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="559dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/dado1"
         android:layout_width="144dp"
         android:layout_height="132dp"
         app:layout_constraintBottom_toTopOf="@+id/lanceDadoBotao"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/dado2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dice_1" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/dado2"
         android:layout_width="144dp"
         android:layout_height="132dp"
         app:layout_constraintBottom_toTopOf="@+id/lanceDadoBotao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/dado1"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dice_1" />
 
